@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio </title>
+   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .skills{
+    width: 100%;
+    /* max-width: 600px; */
+  
+    /* padding: 0 20px; */
+    /* background: #fff; */
+    /* box-shadow: 0 0px 5px rgba(198, 188, 188, 0.913); */
+    border-radius: 10px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    color: #111;
+    text-align: start;
+    padding-left: 4px;
+    font-weight: bold;
+}
+.skill-bar{
+    height: 14px;
+    background: #111;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 9.9s 1;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 5px;
+    background:#fff;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    background: #fff;
+    top:-20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+
+}
+    </style>
+</head>
+<body class="bg-slate-200">
+    <div class=" grid sm:flex gap-7">
+
+       <div class=" w-[100%] sm:w-[40%] bg-white sm:h-[100%] ml-4 mt-4  text-center  mb-5  shadow-2xl pb-2">
+  
+    <img class="w-[300px] h-[300px] rounded-full  mt-4 mr-9 ml-6 sm:ml-20 border-2px drop-shadow-2xl " src="me2024.jpg" alt="">
+    <button class="bg-blue-600  py-1 rounded font-bold text-2xl text-white mt-2 w-[100%]"> Anas Abdinasir Ali</button>
+   <div class="border-b-2 border-t-2 my-4 text-start pl-20 sm:pl-4   font-bold">
+    <p > <i class="fa fa-briefcase"></i>  <span class="ml-2">Designer </span></p>
+    <p > <i class="fa fa-home"></i>  <span class="ml-2">Mogadishu Somalia </span></p>
+    <p > <i class="fa fa-envelope"></i>  <span class="ml-2">Anasabdin@gmail.com</span></p>
+    <p > <i class="fa fa-phone"></i>  <span class="ml-2">+252 612023649</span></p>
+</div>
+    <!-- Skilss  -->
+     <div class="skills">
+        <h1> <i class="fa fa-asterisk text-2xl font-bold"></i> <span class="ml-4 font-bold text-2xl">Skills</span></h1>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="97%" style="max-width: 97%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+           
+            <div class="skill-name">css</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="85%" style="max-width: 97%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">javascript</div>
+            <div class="skill-bar">
+                <div class="skill-per" per="50%" style="max-width: 97%;"></div>
+            </div>
+        </div>
+     </div>
+     <!--  Languages -->
+       <div class="mt-10">
+        <h1> <i class="fa fa-globe text-2xl font-bold"></i> <span class="ml-4 font-bold text-2xl">Languages</span></h1>
+        <div class="skill">
+            <div class="skill-name ">Somali</div>
+            <div class="skill-bar bg-blue-600">
+                <div class="skill-per bg-orange-500" per="100%" style="max-width: 100%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name ">English</div>
+            <div class="skill-bar bg-blue-600">
+                <div class="skill-per bg-orange-500" per="80%" style="max-width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name ">Arabic</div>
+            <div class="skill-bar bg-blue-600">
+                <div class="skill-per bg-orange-500" per="55%" style="max-width: 55%;"></div>
+            </div>
+        </div>
+
+       </div>
+   
+       </div> 
+       <!-- Right section -->
+       <div class=" w-[100%] sm:w-[60%]  h-[100vh]    ">
+
+    <div class="ml-1  mr-0 sm:mr-6 mt-4 bg-white  text-blue-600 shadow-xl" >
+             <p class="text-3xl font-bold mx-4 "> <i class="fa-solid fa-briefcase"></i> <span class="ml-3">Work Experience</span></p>
+      
+             <div class="border-b-2  pb-3    mx-4">
+        <h4 class="text-xl font-bold pt-4">Front End Developer </h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" >Jan 2024 -</span>  <span> <button class="bg-orange-500  px-1 rounded text-white font-bold">Curent</button></span></p>
+    <p class="pt-2 text-black">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+
+    </p>
+    </div>
+       <div class="border-b-2 pb-3 mx-4">
+        <h4 class="text-xl font-bold pt-4"> Video Editor </h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" >march 2022 - 2023</span>  </p>
+    <p class="pt-2 text-black">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+
+    </p>
+    </div>
+       <div class="border-b-2 pb-3 mx-4">
+        <h4 class="text-xl font-bold pt-4">Graphic Designer </h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" > 2020- 2022</span>  </p>
+    <p class="pt-2 text-black">Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.
+
+    </p>
+    </div>
+    </div>
+  <!-- second right div -->
+
+  <div class="mt-5 ml-1 mr-0  sm:mr-6 bg-white pt-4 sm:shadow ">
+    <div class="mx-4 mt-4    text-blue-600" >
+             <p class="text-3xl font-bold mx-4 "> <i class="fa-solid fa-school"></i> <span class="ml-3">Education</span></p>
+      
+             <div class="border-b-2  pb-3 mx-4">
+        <h4 class="text-xl font-bold pt-4">Somaville University</h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" > 2022 -</span>  <span> <button class="bg-orange-500  px-1 rounded text-white font-bold">Curent</button></span></p>
+    <p class="pt-2 text-black"> Bachelor Degree
+
+    </p>
+    </div>
+       <div class="border-b-2 pb-3 mx-4">
+        <h4 class="text-xl font-bold pt-4">  Omar Samatar </h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" > sept 2018 -  may-2021</span>  </p>
+    <p class="pt-2 text-black">Secondry School
+
+    </p>
+    </div>
+       <div class="border-b-2 pb-3 mx-4">
+        <h4 class="text-xl font-bold pt-4"> Al-imra </h4>
+       <p class="pt-2 text-xl"><i class="fa-solid fa-calendar-days"></i> <span class="ml-3" > 2012- 2018</span>  </p>
+    <p class="pt-2 text-black"> Primary School
+
+    </p>
+    </div>
+    </div>
+  
+    </div> 
+
+    </div> 
+
+
+ 
+    
+
+
+</div>
+
+
+<div class=" bg-blue-600   p-9 mt-[560px] sm:mt-0 text-2xl font-bold text-white text-center">
+<p class="text-xl"> find me on Social media</p>
+<a href="https://www.facebook.com/Wayelka2013?mibextid=ZbWKwL"> <i class="fa-brands fa-facebook"></i> </a> 
+<a href=" https://wa.me//+252612023649">     <i class="fa-brands fa-whatsapp"></i></a>
+</div>
+   
+
+</body>
+</html>
